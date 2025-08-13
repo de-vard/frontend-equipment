@@ -1,15 +1,16 @@
 import React from "react";
-import { useUserActions } from "../../hooks/user.actions";
-import Layout from "./Layout";
-import MyEquipment from "../equipment/MyEquipment";
+
+import MyEquipment from "./home/MyEquipment";
+import NavigationBar from "./Navbar";
+
 
 function Home() {
-    const actions = useUserActions();
+
 
     return (
         <div>
-            <Layout></Layout>
-              <MyEquipment />
+            <NavigationBar/>
+            <MyEquipment />
         </div>
 
 

@@ -38,7 +38,7 @@ const refreshAuthLogic = async (failedRequest) => {
 
         // Отправляет refreshToken на сервер для получения нового accessToken
         .post(
-            "/authentication/refresh/", // Эндпоинт для обновления токена
+            "/auth/refresh/", // Эндпоинт для обновления токена
             { refresh: getRefreshToken(), }, // Отправляем refresh-токен
             { baseURL: "http://localhost:8000/api/v1", }  // Базовый URL для этого запроса
         )
